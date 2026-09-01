@@ -8,13 +8,13 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <style>
   :root {
-    --bg: #f7faf9; --panel: #ffffff; --ink: #10201c; --muted: #5b716b;
-    --line: #dbe7e3; --mint: #0f9e8e; --blue: #1d63c9; --accent: var(--mint);
+    --bg: #faf8f6; --panel: #ffffff; --ink: #1c1512; --muted: #6e625c;
+    --line: #e8e0da; --accent: #c8430c; --accent-2: #9e340a;
   }
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #070f0d; --panel: #0e1a17; --ink: #e6f2ee; --muted: #90a8a1;
-      --line: #1c2f2a; --mint: #5eead4; --blue: #60b8f8;
+      --bg: #0d1117; --panel: #161a20; --ink: #e7e3e0; --muted: #99a1aa;
+      --line: #262c34; --accent: #ff7a3d; --accent-2: #ffa06b;
     }
   }
   * { box-sizing: border-box; }
@@ -46,7 +46,7 @@
     transition: border-color .15s ease, transform .15s ease;
   }
   .btn:hover { border-color: var(--accent); transform: translateY(-1px); }
-  .btn.primary { background: var(--accent); border-color: var(--accent); color: #041210; }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: #ffffff; }
   h2 { font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.1em;
        color: var(--muted); margin: 60px 0 16px; font-weight: 650; }
   .grid { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
@@ -62,7 +62,7 @@
   .pill { display: inline-block; margin-top: 12px; font-size: 0.72rem;
           text-transform: uppercase; letter-spacing: 0.07em; font-weight: 650;
           padding: 3px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
-  .pill.live { color: var(--mint); border-color: var(--mint); }
+  .pill.live { color: var(--accent); border-color: var(--accent); }
   footer { margin: 76px 0 50px; padding-top: 22px; border-top: 1px solid var(--line);
            color: var(--muted); font-size: 0.88rem;
            display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
@@ -77,13 +77,13 @@
       <svg class="mark" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="b12n-oss mark">
         <defs>
           <radialGradient id="t" cx="32%" cy="24%" r="90%">
-            <stop offset="0%" stop-color="#132A21"/><stop offset="55%" stop-color="#0A1613"/><stop offset="100%" stop-color="#050B0A"/>
+            <stop offset="0%" stop-color="#2A1710"/><stop offset="52%" stop-color="#161A20"/><stop offset="100%" stop-color="#0D1117"/>
           </radialGradient>
           <linearGradient id="a" x1="10%" y1="4%" x2="80%" y2="98%">
-            <stop offset="0%" stop-color="#C7F9E5"/><stop offset="45%" stop-color="#5EEAD4"/><stop offset="100%" stop-color="#0B7A70"/>
+            <stop offset="0%" stop-color="#FFE3C4"/><stop offset="45%" stop-color="#FFA06B"/><stop offset="100%" stop-color="#B8460F"/>
           </linearGradient>
           <linearGradient id="b" x1="90%" y1="6%" x2="20%" y2="96%">
-            <stop offset="0%" stop-color="#BAE6FD"/><stop offset="45%" stop-color="#38BDF8"/><stop offset="100%" stop-color="#1A3FA8"/>
+            <stop offset="0%" stop-color="#FFB894"/><stop offset="45%" stop-color="#F2662A"/><stop offset="100%" stop-color="#6E2205"/>
           </linearGradient>
         </defs>
         <rect width="512" height="512" rx="114" fill="url(#t)"/>
