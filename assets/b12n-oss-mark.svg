@@ -1,0 +1,50 @@
+<svg viewBox="0 0 512 512" width="512" height="512" xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-label="b12n-oss mark: two interlocking rings">
+  <defs>
+    <radialGradient id="tile" cx="32%" cy="24%" r="90%">
+      <stop offset="0%" stop-color="#2A1710"/><stop offset="52%" stop-color="#161A20"/><stop offset="100%" stop-color="#0D1117"/>
+    </radialGradient>
+    <linearGradient id="ringA" x1="10%" y1="4%" x2="80%" y2="98%">
+      <stop offset="0%" stop-color="#FFE3C4"/><stop offset="30%" stop-color="#FFA06B"/>
+      <stop offset="70%" stop-color="#FF7A3D"/><stop offset="100%" stop-color="#B8460F"/>
+    </linearGradient>
+    <linearGradient id="ringB" x1="90%" y1="6%" x2="20%" y2="96%">
+      <stop offset="0%" stop-color="#FFB894"/><stop offset="30%" stop-color="#F2662A"/>
+      <stop offset="70%" stop-color="#C8430C"/><stop offset="100%" stop-color="#6E2205"/>
+    </linearGradient>
+    <linearGradient id="glossA" x1="8%" y1="0%" x2="70%" y2="80%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.72"/>
+      <stop offset="55%" stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glossB" x1="92%" y1="0%" x2="30%" y2="80%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.62"/>
+      <stop offset="55%" stop-color="#FFFFFF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="drop" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+    <mask id="overTop">
+      <rect width="512" height="512" fill="#000"/>
+      <circle cx="304" cy="256" r="94" fill="none" stroke="#fff" stroke-width="54"/>
+      <rect x="0" y="256" width="512" height="256" fill="#000"/>
+    </mask>
+  </defs>
+  <rect width="512" height="512" rx="114" fill="url(#tile)"/>
+  <rect x="1.5" y="1.5" width="509" height="509" rx="112.5"
+        fill="none" stroke="#FF7A3D" stroke-opacity="0.16" stroke-width="3"/>
+  <g filter="url(#drop)" fill="none">
+    <circle cx="208" cy="256" r="94" stroke="#120A06" stroke-width="52"/>
+    <circle cx="208" cy="256" r="94" stroke="url(#ringA)" stroke-width="40"/>
+    <circle cx="208" cy="256" r="94" stroke="url(#glossA)" stroke-width="14"/>
+    <circle cx="304" cy="256" r="94" stroke="#120A06" stroke-width="52"/>
+    <circle cx="304" cy="256" r="94" stroke="url(#ringB)" stroke-width="40"/>
+    <circle cx="304" cy="256" r="94" stroke="url(#glossB)" stroke-width="14"/>
+    <g mask="url(#overTop)">
+      <circle cx="208" cy="256" r="94" stroke="#120A06" stroke-width="52"/>
+      <circle cx="208" cy="256" r="94" stroke="url(#ringA)" stroke-width="40"/>
+      <circle cx="208" cy="256" r="94" stroke="url(#glossA)" stroke-width="14"/>
+    </g>
+  </g>
+</svg>
