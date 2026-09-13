@@ -144,11 +144,46 @@
          through jank's C++ interop.</p>
       <span class="pill live">Public</span>
     </a>
+    <a class="card" href="https://github.com/b12n-oss/raygui-jnk">
+      <h3>raygui-jnk</h3>
+      <p>24 raygui examples in jank, with raygui built as an ordinary jank
+         package alongside raylib-jnk's C++/LLVM interop.</p>
+      <span class="pill live">Public</span>
+    </a>
     <a class="card" href="https://github.com/b12n-oss/raylib-clj">
       <h3>raylib-clj</h3>
       <p>113 raylib examples in JVM Clojure, calling libraylib directly over
          coffi and JDK 22+'s Panama Foreign Function &amp; Memory API. No
          wrapper library, no codegen.</p>
+      <span class="pill live">Public</span>
+    </a>
+    <a class="card" href="https://github.com/b12n-oss/lambda-mvp-jlt">
+      <h3>lambda-mvp-jlt</h3>
+      <p>A shareable AWS Lambda custom runtime in Jolt (native Clojure on Chez
+         Scheme), with a jolt bench tool for reproducing a cold-vs-warm
+         boot-time comparison against your own AWS account.</p>
+      <span class="pill live">Public</span>
+    </a>
+    <a class="card" href="https://github.com/b12n-oss/lambda-mvp-jnk">
+      <h3>lambda-mvp-jnk</h3>
+      <p>The same custom-runtime MVP in jank, native Clojure compiled to
+         native code via C++/Clang/LLVM, deployed as a container image, with
+         a bb bench tool for the same cold-vs-warm comparison.</p>
+      <span class="pill live">Public</span>
+    </a>
+    <a class="card" href="https://github.com/b12n-oss/lambda-mvp-cljs">
+      <h3>lambda-mvp-cljs</h3>
+      <p>The third sibling: an AWS Lambda demo handler in ClojureScript on
+         AWS's managed nodejs24.x runtime, completing a real cold/warm
+         boot-time comparison across all three languages.</p>
+      <span class="pill live">Public</span>
+    </a>
+    <a class="card" href="https://github.com/b12n-oss/lambda-mvp-rst">
+      <h3>lambda-mvp-rst</h3>
+      <p>AWS Lambda custom runtime in Jolt (native Clojure on Chez Scheme),
+         whose handler builds its JSON response with real Rust via
+         jolt-diplomat, a Diplomat-based FFI bridge, instead of hand-assembling
+         a string. Verified end to end against real Lambda infrastructure.</p>
       <span class="pill live">Public</span>
     </a>
   </div>
@@ -166,9 +201,37 @@
       <p>Guide and full demo gallery for the 212-example jank raylib suite.</p>
       <span class="pill live">Live</span>
     </a>
+    <a class="card" href="https://b12n-oss.github.io/raygui-jnk/">
+      <h3>raygui-jnk docs</h3>
+      <p>Guide and demo gallery for the 24-example jank raygui suite.</p>
+      <span class="pill live">Live</span>
+    </a>
     <a class="card" href="https://b12n-oss.github.io/raylib-clj/">
       <h3>raylib-clj docs</h3>
       <p>Guide and full demo gallery for the 113-example JVM Clojure raylib suite.</p>
+      <span class="pill live">Live</span>
+    </a>
+    <a class="card" href="https://b12n-oss.github.io/lambda-mvp-jlt/">
+      <h3>lambda-mvp-jlt guide</h3>
+      <p>The Runtime API loop, the AL2023 build, and how to reproduce the
+         cold vs. warm boot-time comparison on your own AWS account.</p>
+      <span class="pill live">Live</span>
+    </a>
+    <a class="card" href="https://b12n-oss.github.io/lambda-mvp-jnk/">
+      <h3>lambda-mvp-jnk guide</h3>
+      <p>The jank sibling's own runtime loop, container build, and bench tool.</p>
+      <span class="pill live">Live</span>
+    </a>
+    <a class="card" href="https://b12n-oss.github.io/lambda-mvp-cljs/">
+      <h3>lambda-mvp-cljs guide</h3>
+      <p>The ClojureScript/nodejs24.x sibling, and the three-way language
+         comparison it completes.</p>
+      <span class="pill live">Live</span>
+    </a>
+    <a class="card" href="https://b12n-oss.github.io/lambda-mvp-rst/">
+      <h3>lambda-mvp-rst guide</h3>
+      <p>Getting started, architecture, the Rust JSON builder via jolt-diplomat,
+         the Runtime API loop, the AL2023 build, and cold vs. warm boot time.</p>
       <span class="pill live">Live</span>
     </a>
   </div>
