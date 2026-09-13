@@ -186,6 +186,14 @@
          a string. Verified end to end against real Lambda infrastructure.</p>
       <span class="pill live">Public</span>
     </a>
+    <a class="card" href="https://github.com/b12n-oss/lambda-mvp-bb">
+      <h3>lambda-mvp-bb</h3>
+      <p>The fifth sibling: an AWS Lambda custom runtime in Babashka, via
+         blambda. Nothing is compiled ahead of time -- the handler is
+         interpreted at cold start by Babashka's own SCI interpreter, and
+         it's the only one of the five shipped as a Lambda Layer.</p>
+      <span class="pill live">Public</span>
+    </a>
   </div>
 
   <h2>Documentation</h2>
@@ -232,6 +240,13 @@
       <h3>lambda-mvp-rst guide</h3>
       <p>Getting started, architecture, the Rust JSON builder via jolt-diplomat,
          the Runtime API loop, the AL2023 build, and cold vs. warm boot time.</p>
+      <span class="pill live">Live</span>
+    </a>
+    <a class="card" href="https://b12n-oss.github.io/lambda-mvp-bb/">
+      <h3>lambda-mvp-bb guide</h3>
+      <p>Why this sibling ships as a Lambda Layer, the Runtime API loop via
+         blambda, and the bb bench baseline completing the five-way
+         cold vs. warm boot-time comparison.</p>
       <span class="pill live">Live</span>
     </a>
   </div>
