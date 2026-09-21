@@ -59,6 +59,8 @@
   .card h3 { margin: 0; font-size: 1.06rem; font-weight: 650;
              font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
   .card p { margin: 8px 0 0; color: var(--muted); font-size: 0.93rem; }
+  .card .reel { display: block; width: 100%; margin: 12px 0 0; border-radius: 8px;
+                border: 1px solid var(--line); background: #000; }
   .pill { display: inline-block; margin-top: 12px; font-size: 0.72rem;
           text-transform: uppercase; letter-spacing: 0.07em; font-weight: 650;
           padding: 3px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
@@ -162,6 +164,21 @@
       <p>One Pac-Man written four times, once per Clojure-family runtime:
          babashka, JVM Clojure, jank and jolt. Nothing is shared between the
          four, so what each FFI costs you is there to read side by side.</p>
+      <img class="reel" loading="lazy"
+           src="https://raw.githubusercontent.com/b12n-oss/raylib-pacman/main/docs/demos/jolt-example.gif"
+           alt="Pac-Man running under Jolt">
+      <span class="pill live">Public</span>
+    </a>
+    <a class="card" href="https://github.com/b12n-oss/lisp-games">
+      <h3>lisp-games</h3>
+      <p>Small graphical programs across the same four runtimes, one directory
+         per game and one per runtime. helitorus reports compute and draw
+         milliseconds separately, so the comparison is measured rather than
+         asserted. None of the games are ours, and every port names whose work
+         it started from.</p>
+      <img class="reel" loading="lazy"
+           src="https://raw.githubusercontent.com/b12n-oss/lisp-games/main/docs/demos/helitorus-jolt.gif"
+           alt="helitorus running under Jolt">
       <span class="pill live">Public</span>
     </a>
     <a class="card" href="https://github.com/b12n-oss/lambda-mvp-jlt">
@@ -230,6 +247,12 @@
       <h3>raylib-pacman docs</h3>
       <p>Twelve pages on what four FFIs will and will not carry across the C
          boundary, and an animated demo of each runtime playing the same game.</p>
+      <span class="pill live">Live</span>
+    </a>
+    <a class="card" href="https://b12n-oss.github.io/lisp-games/">
+      <h3>lisp-games docs</h3>
+      <p>Nine pages on two games across four runtimes, including how to read the
+         timings and where two of the early numbers turned out to be wrong.</p>
       <span class="pill live">Live</span>
     </a>
     <a class="card" href="https://b12n-oss.github.io/lambda-mvp-jlt/">
